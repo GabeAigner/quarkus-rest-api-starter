@@ -6,10 +6,12 @@ import io.quarkus.runtime.StartupEvent;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import java.time.LocalDate;
 import java.util.logging.Logger;
 
 @ApplicationScoped
+@Transactional
 public class InitBean {
     @Inject
     PersonDAO personDao;
