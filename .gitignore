@@ -1,3 +1,7 @@
+#custom
+db/
+lsp/
+
 # Eclipse
 .project
 .classpath
