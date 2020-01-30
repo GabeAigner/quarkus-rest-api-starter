@@ -1,3 +1,12 @@
+# My Quarkus Demo
+
+### Forgot to add an extension?
+1. ``mvn quarkus:list-extensions``
+
+2. ``mvn quarkus:add-extension -Dextensions="groupId:artifactId"``
+
+Or look at this website: https://quarkus.io/extensions/
+
 ### How to add the Quarkus Debugger?
 1. ```./mvnw clean compile quarkus:dev``` in Terminal
 
