@@ -41,3 +41,17 @@ quarkus.hibernate-orm.database.generation=drop-and-create
 
 ### Where do I get the Logger from?
 Look at the website: https://quarkus.io/guides/lifecycle
+
+### Why is there no Id in the entity?
+
+Instead of an Id you add this to your class: ``extends PanacheEntity``
+
+NOTE: To do this, you need the Quarkus Extension ``io.quarkus:quarkus-hibernate-orm-panache``
+
+### How works this findAll, findById, find("name"), without named Querys ?
+
+This is the power of panache! :D
+
+You need to implement this into your DAO ``implements PanacheRepository<Person> ``
+
+Panache has all kind of pre-coded stuff in it, so just use it. I do not know how to see a list of all right now, but I will add it soon.
