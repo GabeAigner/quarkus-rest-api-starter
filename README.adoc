@@ -1,5 +1,17 @@
 # My Quarkus Demo
 
+### Getting started with Quarkus
+
+1. Create your Quarkus Project (best to use the IntelliJ Plugin)
+
+2. Open a terminal (in IntelliJ), type ``./mvnw clean compile quarkus:dev``
+
+3. To try this out open another terminal and type ``curl -w "\n" http://localhost:8080/<YOUR-PATH>``
+
+IMPORTANT: If you use Linux, and get a permission denied error after one of the above commands use this: ``chomd +x mvnw``
+
+Or go to this website: https://quarkus.io/guides/getting-started
+
 ### Forgot to add an extension?
 1. ``mvn quarkus:list-extensions``
 
@@ -26,3 +38,6 @@ quarkus.datasource.password = passme
 # drop and create the database at startup (use `update` to only update the schema)
 quarkus.hibernate-orm.database.generation=drop-and-create
 ```
+
+### Where do I get the Logger from?
+Look at the website: https://quarkus.io/guides/lifecycle
