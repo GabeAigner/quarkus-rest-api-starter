@@ -55,3 +55,7 @@ This is the power of panache! :D
 You need to implement this into your DAO ``implements PanacheRepository<Person> ``
 
 Panache has all kind of pre-coded stuff in it, so just use it. I do not know how to see a list of all right now, but I will add it soon.
+
+### Good Resources for Quarkus-with-Panache
+
+https://in.relation.to/2019/11/19/hibernate-orm-with-panache-in-quarkus/
