@@ -19,6 +19,7 @@ public class Address extends PanacheEntity {
     @ManyToOne @JoinColumn(name = "A_PERSON_ID")
     Person person;
 
+    //region Constructors (for test data, cause of panache not actually needed)
     public Address() {
     }
 
@@ -27,4 +28,5 @@ public class Address extends PanacheEntity {
         this.city = city;
         this.zipCode = zipCode;
     }
+    //endregion
 }

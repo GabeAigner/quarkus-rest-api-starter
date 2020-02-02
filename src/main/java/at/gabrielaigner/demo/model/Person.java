@@ -13,6 +13,7 @@ public class Person extends PanacheEntity {
     public LocalDate birth;
     public String status;
 
+    //region Constructors (for test data, cause of panache not actually needed)
     public Person() {
     }
 
@@ -21,4 +22,5 @@ public class Person extends PanacheEntity {
         this.birth = birth;
         this.status = status;
     }
+    //endregion
 }
