@@ -23,11 +23,11 @@ public class PersonEndpoint {
 
     @GET
     public Response findAll(){
-        //Test von findById (das ist alles schon von panache vorprogrammieret)
+        //Test of findById (all of this is pre-implemented by panache)
         Person person = personDao
                 .findById(1L);
 
-        //Test von find by Name
+        //Test of find by Name
         Person person1 = personDao
                 .find("name", "Christian")
                 .firstResult();
